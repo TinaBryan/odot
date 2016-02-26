@@ -14,7 +14,7 @@
   <tbody>
     <% @todo_lists.each do |todo_list| %>
       <tr>
-        <td><%= todo_list.title %></td>
+        <td id="<%= dom_id(todo_list) %>"><%= todo_list.title %></td>
         <td><%= todo_list.description %></td>
         <td><%= link_to 'Show', todo_list %></td>
         <td><%= link_to 'Edit', edit_todo_list_path(todo_list) %></td>
