@@ -1,3 +1,3 @@
 class TodoList < ActiveRecord::Base
-	validtes :title, presence: true
+	validates :title, presence: true
 end
