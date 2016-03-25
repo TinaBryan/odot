@@ -1,4 +1,8 @@
 Odot::Application.routes.draw do
+    namespace :api do
+    resources :todo_lists
+  end
+
   resources :todo_lists do
     resources :todo_items do
       member do
